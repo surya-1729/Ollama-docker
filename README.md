@@ -17,8 +17,8 @@ This repository provides a setup for running a Llama3 model **FastAPI** applicat
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/surya-1729/Ollama-docker-FastAPI.git
-cd Ollama-docker-FastAPI
+git clone https://github.com/surya-1729/Ollama-server-with-Docker-and-FastAPI.git
+cd Ollama-server-with-Docker-and-FastAPI
 ```
 
 ### Run the Application
