@@ -1,4 +1,4 @@
-# Ollama Docker with FastAPI (Docker Compose)
+# Ollama-server-with-Docker-and-FastAPI
 
 This repository provides a setup for running a Llama3 model **FastAPI** application using **Docker Compose** and **Ollama**. It simplifies managing multiple services and configurations, making it easy to deploy and run locally.
 
@@ -76,7 +76,7 @@ For local development:
 ## Directory Structure
 
 ```plaintext
-Ollama-docker-FastAPI/
+Ollama-server-with-Docker-and-FastAPI/
 ├── fastapi/               # FastAPI application code
 │   ├── app.py             # Main entry point for the FastAPI app
 │   ├── Dockerfile         # Dockerfile for building FastAPI service image
