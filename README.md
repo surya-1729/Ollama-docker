@@ -1,6 +1,6 @@
 # Ollama Docker with FastAPI (Docker Compose)
 
-This repository provides a setup for running a **FastAPI** application using **Docker Compose**. It simplifies managing multiple services and configurations, making it easy to deploy and run locally.
+This repository provides a setup for running a Llama3 model **FastAPI** application using **Docker Compose** and **Ollama**. It simplifies managing multiple services and configurations, making it easy to deploy and run locally.
 
 ---
 
@@ -12,16 +12,6 @@ This repository provides a setup for running a **FastAPI** application using **D
 - **Extensible Design**: Add more services or scale as needed.
 
 ---
-
-## Prerequisites
-
-Before getting started, ensure you have the following installed:
-
-- [Docker](https://www.docker.com/) (latest version recommended)
-- [Docker Compose](https://docs.docker.com/compose/) (comes bundled with Docker Desktop)
-
----
-
 ## Installation and Setup
 
 ### Clone the Repository
@@ -87,25 +77,18 @@ For local development:
 
 ```plaintext
 Ollama-docker-FastAPI/
-├── app/                   # FastAPI application code
-│   ├── main.py            # Main entry point for the FastAPI app
-│   ├── ...                # Additional app files (routes, models, etc.)
-├── docker-compose.yml     # Docker Compose configuration file
-├── Dockerfile             # Dockerfile for building FastAPI service image
-├── requirements.txt       # Python dependencies for FastAPI
+├── fastapi/               # FastAPI application code
+│   ├── app.py             # Main entry point for the FastAPI app
+│   ├── Dockerfile         # Dockerfile for building FastAPI service image
+│   ├── requirements.txt   # Python dependencies for FastAPI
+├── ollama/                # FastAPI application code
+│   ├── Dockerfile         # Dockerfile for building ollama image
+│   ├── pull-llama3.sh     # shell script to pull llama3 model
+├── compose.yml            # Docker Compose configuration file
 └── README.md              # Project documentation (this file)
 ```
 
 ---
-
-## Contributing
-
-Contributions are welcome! To contribute:
-
-1. Fork this repository.
-2. Create a new branch (`feature/my-feature`).
-3. Commit your changes.
-4. Submit a pull request.
 
 ---
 
@@ -118,6 +101,3 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 ## Acknowledgments
 
 Special thanks to the creators of **FastAPI**, **Docker**, and **Docker Compose** for their incredible tools that make this project possible!
-
----
-Answer from Perplexity: pplx.ai/share
