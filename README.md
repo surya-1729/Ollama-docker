@@ -1,2 +1,2 @@
-# Ollama-docker
-this repo is based on ollama docker to run locally!
+# Ollama-fastapi
+this repo is based on ollama and fastapi to run locally!
